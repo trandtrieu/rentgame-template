@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from pixner.net/gameplex/gameplex-v2/chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Jan 2024 16:01:26 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <title>Chat - GamePlex</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loading">Loading</div>
+    </div>
+
+    <!-- cursor effect-->
+    <div class="cursor"></div>
+    <!-- Header area  -->
+
+    <!-- header-section start -->
+    <header class="header-section w-100 bgn-4">
+        <div class="py-sm-6 py-3 mx-xxl-20 mx-md-15 mx-3">
+            <div class="d-flex align-items-center justify-content-between gap-xxl-10 gap-lg-8 w-100">
+                <nav
+                    class="navbar-custom d-flex gap-lg-6 align-items-center flex-column flex-lg-row justify-content-start justify-content-lg-between w-100">
+                    <div class="top-bar w-100 d-flex align-items-center gap-6">
+                        <button class="navbar-toggle-btn d-block d-lg-none" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <a class="navbar-brand d-flex align-items-center gap-4" href="index.html">
+                            <img class="w-100 logo1" src="assets/img/favicon.png" alt="favicon">
+                            <img class="w-100 logo2" src="assets/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="navbar-toggle-item w-100 position-lg-relative">
+                        <ul class="custom-nav gap-3 gap-lg-7 cursor-scale growDown2 ms-xxl-10" data-lenis-prevent>
+                            <li class="menu-link">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <button>Tournament</button>
+                                <ul class="sub-menu">
+                                    <li class="menu-link">
+                                        <a href="tournaments.html">Tournaments</a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="tournaments-details.html">Tournaments Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-link">
+                                <a href="game.html">Game</a>
+                            </li>
+                            <li class="menu-item">
+                                <button>Teams</button>
+                                <ul class="sub-menu">
+                                    <li class="menu-link">
+                                        <a href="teams.html">Teams</a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="teams-details.html">Teams Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <button>pages</button>
+                                <ul class="sub-menu">
+                                    <li class="menu-link">
+                                        <a href="signup.html">Sign Up</a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="signin.html">Sign In</a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="error.html">Error</a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="faq.html">Faq</a>
+                                    </li>
+                                    <li class="menu-link">
+                                        <a href="terms-condition.html">Terms Conditions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header-btn-area d-flex align-items-center gap-sm-6 gap-3">
+                    <button
+                        class="btn-rounded-cus wallet-btn border-0 d-flex align-items-center gap-3 p-xl-2 p-0 pe-xl-6 rounded-5 position-relative">
+                        <span class="btn-circle fs-2xl">
+                            <i class="ti ti-wallet"></i>
+                        </span>
+                        <span class="text-nowrap d-none d-xl-block">Connect Wallet</span>
+                    </button>
+                    <button class="ntf-btn box-style fs-2xl">
+                        <i class="ti ti-bell-filled"></i>
+                    </button>
+                    <div class="header-profile pointer">
+                        <div class="profile-wrapper d-flex align-items-center gap-3">
+                            <div class="img-area overflow-hidden">
+                                <img class="w-100" src="assets/img/profile.png" alt="profile">
+                            </div>
+                            <span class="user-name d-none d-xxl-block text-nowrap">David Malan</span>
+                            <i class="ti ti-chevron-down d-none d-xxl-block"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-section end -->
+
+    <!-- notification area start -->
+    <div class="notification-area p-4" data-lenis-prevent>
+        <div class="notification-card d-grid gap-lg-4 gap-2" data-tilt>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-img-area">
+                        <img class="w-100 rounded-circle" src="assets/img/avatar1.png" alt="profile">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Cristofer Dorwart</span>
+                        <span class="card-text d-block tcn-1 fs-sm">Winners The Last Game</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-img-area">
+                        <img class="w-100 rounded-circle" src="assets/img/avatar2.png" alt="profile">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Piter Maio </span>
+                        <span class="card-text d-block tcn-1 fs-sm">Accept your challenge</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Copa Punto Gamer </span>
+                        <span class="card-text d-block tcn-1 fs-sm">Tournament start</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Daily Bonus </span>
+                        <span class="card-text d-block tcn-1 fs-sm">Tournament start</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-img-area">
+                        <img class="w-100 rounded-circle" src="assets/img/avatar1.png" alt="profile">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Cristofer Dorwart</span>
+                        <span class="card-text d-block tcn-1 fs-sm">Winners The Last Game</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-img-area">
+                        <img class="w-100 rounded-circle" src="assets/img/avatar2.png" alt="profile">
+                    </div>
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Piter Maio </span>
+                        <span class="card-text d-block tcn-1 fs-sm">Accept your challenge</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Copa Punto Gamer </span>
+                        <span class="card-text d-block tcn-1 fs-sm">Tournament start</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="card-item d-flex align-items-center gap-4">
+                    <div class="card-info">
+                        <span class="card-title d-block tcn-1"> Daily Bonus </span>
+                        <span class="card-text d-block tcn-1 fs-sm">Tournament start</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- notification area end -->
+
+    <!-- connect your Wallet section start -->
+    <div class="connect-wallet-section position-fixed top-0 start-0 w-100 vh-100">
+        <div class="connect-wallet-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="vh-100 wallet-wrapper d-center">
+            <div class="wallet-area pt-lg-8 pt-sm-6 pt-4 pb-lg-20 pb-sm-10 pb-6 px-lg-15 px-sm-8 px-3 bgn-4 rounded-5 ">
+                <div class="mb-lg-7 mb-sm-5 mb-3 d-flex justify-content-end">
+                    <i class="ti ti-circle-x display-four fw-normal pointer wallet-close-btn"></i>
+                </div>
+                <h3 class="tcn-1 cursor-scale growDown title-anim mb-lg-20 mb-sm-10 mb-6">
+                    Connect Your Wallet
+                </h3>
+                <div class="wallet-option pb-20">
+                    <ul class="d-grid gap-sm-8 gap-4">
+                        <li class="wallet-item p-sm-6 p-2 bgn-3 rounded-4">
+                            <a href="#" class="d-between">
+                                <span>Connect with Metamask</span>
+                                <div class="wallet-item-thumb">
+                                    <img class="w-100" src="assets/img/metamask.png" alt="metamask">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wallet-item p-sm-6 p-2 bgn-3 rounded-4">
+                            <a href="#" class="d-between">
+                                <span>Connect with Wallet Connect </span>
+                                <div class="wallet-item-thumb">
+                                    <img class="w-100" src="assets/img/walletconnect.png" alt="wallet connect">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connect your Wallet section end -->
+
+    <!-- user account details popup start  -->
+    <div class="user-account-popup p-4">
+        <div class="account-items d-grid gap-1" data-tilt>
+
+            <div class="user-level-area p-3">
+                <div class="user-info d-between">
+                    <span class="user-name fs-five">David Malan</span>
+                    <div class="badge d-flex align-items-center">
+                        <i class="ti ti-medal fs-three fs-normal tcp-2"></i>
+                        <i class="ti ti-medal fs-three fs-normal tcp-2"></i>
+                        <i class="ti ti-medal fs-three fs-normal tcp-2"></i>
+                    </div>
+                </div>
+                <div class="user-level">
+                    <span class="level-title tcn-6">Level</span>
+                    <div class="level-bar my-1">
+                        <div class="level-progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="profile.html" class="account-item">View Profile</a>
+
+            <a href="chat.html" class="account-item">Message</a>
+            <button class="bttn account-item">Logout</button>
+        </div>
+    </div>
+    <!-- user account details popup end  -->
+
+    <!-- chat section start -->
+    <section class="chat-section pt-120 mt-lg-0 mt-sm-15 mt-10">
+        <div class="row gx-6">
+            <div class="col-lg-4 col-md-6 col-sm-8 position-relative">
+                <div class="chat-list-area px-lg-6 px-4 py-lg-8 py-4 bgn-4 rounded">
+                    <div class="msg-list-user-info d-between mb-lg-4 mb-2">
+                        <div class="msg-list-user-thumb">
+                            <img class="w-100 rounded-circle" src="assets/img/player1.png" alt="user thumb">
+                        </div>
+                        <div class="msg-list-user-info d-flex gap-6">
+                            <button class="edit-user bttn outline-0">
+                                <i class="ti ti-edit tcn-1 fs-2xl"></i>
+                            </button>
+                            <button class="more-action bttn outline-0">
+                                <i class="ti ti-dots tcn-1 fs-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="search-chat mb-lg-6 mb-4">
+                        <form action="#">
+                            <div class="input-area d-flex align-items-center gap-3 rounded-4">
+                                <i class="ti ti-search"></i>
+                                <input type="text" placeholder="Search......">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="chat-list-wrapper" data-lenis-prevent>
+                        <ul class="chat-list d-grid gap-lg-6 gap-3">
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender1.png"
+                                                alt="user thumb">
+                                            <div class="online-dot online"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Bessie Cooper</span>
+                                            <span class="fs-sm tcn-6">Let’s play now!</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcn-1">2d</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender2.png"
+                                                alt="user thumb">
+                                            <div class="online-dot offline"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Ronald Richards</span>
+                                            <span class="fs-sm tcn-6">You:I will go to sleep</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcp-2">17m</span>
+                                        <span class="msg-count fs-sm">3</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender3.png"
+                                                alt="user thumb">
+                                            <div class="online-dot online"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Robert Fox</span>
+                                            <span class="fs-sm tcn-6">Are you here?</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcn-1">2d</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender4.png"
+                                                alt="user thumb">
+                                            <div class="online-dot online"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Jacob Jones</span>
+                                            <span class="fs-sm tcn-6">Let’s play now!</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcp-2">10m</span>
+                                        <span class="msg-count fs-sm">4</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender5.png"
+                                                alt="user thumb">
+                                            <div class="online-dot offline"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Bessie Cooper</span>
+                                            <span class="fs-sm tcn-6">Let’s play now!</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcn-1">2d</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender6.png"
+                                                alt="user thumb">
+                                            <div class="online-dot offline"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Guy Hawkins</span>
+                                            <span class="fs-sm tcn-6">I will go AFK</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcn-1">2d</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender4.png"
+                                                alt="user thumb">
+                                            <div class="online-dot online"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Jacob Jones</span>
+                                            <span class="fs-sm tcn-6">Let’s play now!</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcp-2">10m</span>
+                                        <span class="msg-count fs-sm">4</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender5.png"
+                                                alt="user thumb">
+                                            <div class="online-dot offline"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Bessie Cooper</span>
+                                            <span class="fs-sm tcn-6">Let’s play now!</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcn-1">2d</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="chat-item rounded-4">
+                                <a href="#" class="d-between">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="msg-sender-list-thumb position-relative">
+                                            <img class="w-100 rounded-circle" src="assets/img/msg-sender6.png"
+                                                alt="user thumb">
+                                            <div class="online-dot offline"></div>
+                                        </div>
+                                        <div class="msg-list-user-info">
+                                            <span class="fs-five tcn-1 mb-1">Guy Hawkins</span>
+                                            <span class="fs-sm tcn-6">I will go AFK</span>
+                                        </div>
+                                    </div>
+                                    <div class="msg-status">
+                                        <span class="fs-sm tcn-1">2d</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="chat-wrapper p-lg-6 p-sm-4 p-2 bgn-4 rounded">
+                    <div class="chat-header d-between pb-xl-8 pb-4 bb">
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="chat-list-toggle-btn bttn d-lg-none">
+                                <i class="ti ti-menu-2 tcn-1 fs-2xl"></i>
+                            </button>
+                            <div class="msg-receiver-user-thumb">
+                                <img class="w-100 rounded-circle" src="assets/img/msg-sender1.png" alt="user thumb">
+                            </div>
+                        </div>
+                        <div class="msg-more-option">
+                            <button class="video-call bttn">
+                                <i class="ti ti-video tcn-6 fs-2xl"></i>
+                            </button>
+                            <button class="audio-call bttn">
+                                <i class="ti ti-phone tcn-6 fs-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chat-body py-6" data-lenis-prevent>
+                        <div class="chat-msg-area d-grid gap-lg-6 gap-4 w-100">
+                            <div class="chat-msg sender">
+                                <div class="msg-sender-thumb mb-4">
+                                    <img class="w-100 rounded-circle" src="assets/img/msg-sender1.png" alt="user thumb">
+                                </div>
+                                <div class="msg-content">
+                                    <div class="msg-text">
+                                        <span>
+                                            Which game you play now?
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-msg receiver ms-auto">
+                                <div class="msg-content mb-4">
+                                    <div class="msg-text text-end">
+                                        <span>
+                                            Good I will wait you in the game!
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="msg-receiver-thumb mt-2 ms-auto">
+                                    <img class="w-100 rounded-circle" src="assets/img/msg-sender2.png" alt="user thumb">
+                                </div>
+                            </div>
+                            <div class="chat-msg sender">
+                                <div class="msg-sender-thumb mb-4">
+                                    <img class="w-100 rounded-circle" src="assets/img/msg-sender1.png" alt="user thumb">
+                                </div>
+                                <div class="msg-content">
+                                    <div class="msg-text">
+                                        <span>
+                                            What type of game is this? is it a strategy game?
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-msg receiver ms-auto">
+                                <div class="msg-content mb-4">
+                                    <div class="msg-text text-end">
+                                        <span>
+                                            I play Stronghold Kingdoms
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="msg-receiver-thumb mt-2 ms-auto">
+                                    <img class="w-100 rounded-circle" src="assets/img/msg-sender2.png" alt="user thumb">
+                                </div>
+                            </div>
+                            <div class="chat-msg sender">
+                                <div class="msg-sender-thumb mb-4">
+                                    <img class="w-100 rounded-circle" src="assets/img/msg-sender1.png" alt="user thumb">
+                                </div>
+                                <div class="msg-content">
+                                    <div class="msg-text">
+                                        <span>
+                                            What type of game is this? is it a strategy game?
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-msg receiver ms-auto">
+                                <div class="msg-content mb-4">
+                                    <div class="msg-text text-end">
+                                        <span>
+                                            I play Stronghold Kingdoms
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="msg-receiver-thumb mt-2 ms-auto">
+                                    <img class="w-100 rounded-circle" src="assets/img/msg-sender2.png" alt="user thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-footer bt pt-lg-10 pt-sm-8 pt-6">
+                        <form action="#" class="d-flex align-items-center gap-lg-10 gap-sm-8 gap-4">
+                            <div class="emoji-area d-flex align-items-center gap-lg-5 gap-3">
+                                <button class="add-emoji bttn p-0">
+                                    <i class="ti ti-mood-wink-2 tcn-1 fs-2xl"></i>
+                                </button>
+                                <button class="add-file-btn bttn p-0">
+                                    <i class="ti ti-photo tcn-1 fs-2xl"></i>
+                                </button>
+                                <input type="file" id="add-file-input" hidden>
+                            </div>
+                            <div class="input-area d-flex align-items-center gap-3 py-2 pe-2">
+                                <input type="text" class="w-100" placeholder="Type your message...">
+                                <button class="send-msg bttn">
+                                    <i class="ti ti-send tcn-0 fs-2xl"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- chat section end -->
+
+    <!-- ==== js dependencies start ==== -->
+    <!-- jquery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- gsap  -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- gsap scroll trigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- lenis  -->
+    <script src="assets/js/lenis.min.js"></script>
+    <!-- gsap split text -->
+    <script src="assets/js/SplitText.min.js"></script>
+    <!-- tilt js -->
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <!-- scroll magic -->
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <!-- animation.gsap -->
+    <script src="assets/js/animation.gsap.min.js"></script>
+    <!-- gsap customization  -->
+    <script src="assets/js/gsap-customization.js"></script>
+    <!-- apex chart  -->
+    <script src="assets/js/apexcharts.js"></script>
+    <!-- swiper js -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- magnific popup  -->
+    <script src="assets/js/magnific-popup.js_1.1.0_jquery.magnific-popup.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from pixner.net/gameplex/gameplex-v2/chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Jan 2024 16:01:28 GMT -->
+</html>
